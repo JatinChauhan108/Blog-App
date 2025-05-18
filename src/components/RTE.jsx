@@ -13,7 +13,7 @@ function RTE({name, label, control, defaultValue = ""}) {
         render = {({field}) => (
             <Editor
             apiKey='om63qr34405u7p4uq25xixpzs55s59e6gr9zv3znn89knsyy'
-            value = {defaultValue}
+            value = {field.value}
             init = {{
                 height:'500',
                 menubar : true,
