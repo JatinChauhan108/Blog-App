@@ -116,12 +116,10 @@ class Services{
     }
 
     filePreview(fileId){
-        const url = this.bucket.getFileView(
+        return this.bucket.getFileView(
             config.appwriteBucketId,
             fileId
         );
-        console.log("Preview URL:", url);
-        return url;
     }
 }
 
