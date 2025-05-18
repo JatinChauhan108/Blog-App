@@ -1,16 +1,13 @@
 import React from 'react'
+import logo from '../assets/logo.png'
 
-function Logo({width = "100px"}) {
+function Logo({width = "50px"}) {
   return (
     <div>
       <img 
-        src="/logo2-removebg-preview.png" 
+        src={logo}
         alt="BlogApp Logo"
         width={width}
-        onError={(e) => {
-          e.target.onerror = null;
-          e.target.src = "https://static-00.iconduck.com/assets.00/naruto-icon-2048x2048-xhu402rm.png";
-        }}
       />
     </div>
   )
