@@ -13,7 +13,6 @@ function Home() {
   useEffect(() => {
     services.getDocuments([]).then((res) => {
       setPosts(res.documents);
-      console.log(posts);
     })
     
   }, [])

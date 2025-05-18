@@ -69,9 +69,6 @@ function PostForm({post}) {
       return () => subscription.unsubscribe();
     }, [watch, slugTransform, setValue])
 
-    console.log(watch('content'));
-    
-
 
   return (
     <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">

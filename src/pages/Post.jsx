@@ -12,8 +12,7 @@ function Post() {
   const navigate = useNavigate()
 
   const userData = useSelector((state) => state.userData)
-  console.log("This is ",userData);
-  
+
   const isAuthor = (post && userData) ? userData.$id === post.userId : false
 
   useEffect(() => {
