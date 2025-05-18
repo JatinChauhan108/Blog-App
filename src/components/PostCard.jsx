@@ -7,7 +7,7 @@ function PostCard({
 }) {
   return (
     <Link to = {`/post/${$id}`}>
-        <div className='w-full bg-gray-100 rounded-xl p-4'>
+        <div className='w-full bg-white rounded-xl p-4 border border-indigo-100 shadow-md hover:shadow-lg transition-shadow duration-200'>
             <div className='w-full justify-center mb-4'>
                 <img src={services.filePreview(featuredImage)} alt={title}
                 className='rounded-xl' />
